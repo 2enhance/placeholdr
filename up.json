@@ -1,0 +1,25 @@
+{
+    "name": "placeholdr",
+    "profile": "default",
+    "regions": [
+        "eu-west-1"
+    ],
+    "cors": {
+        "enable": true,
+        "allowed_methods": [
+            "OPTIONS",
+            "HEAD",
+            "GET"
+        ],
+        "allowed_headers": [
+            "*"
+        ]
+    },
+    "stages": {
+        "development": {
+            "proxy": {
+                "command": "gin --port $PORT"
+            }
+        }
+    }
+}
